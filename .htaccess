@@ -1,0 +1,13 @@
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET,PUT,POST,DELETE"
+Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+
+Options -Indexes
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^payment$ index.php [QSA,L]
+RewriteRule ^payment/$ index.php [QSA,L]
+RewriteRule ^status$ status.php [QSA,L]
+RewriteRule ^status/$ status.php [QSA,L]

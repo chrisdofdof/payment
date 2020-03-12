@@ -1,15 +1,6 @@
-### ACI Payment Gateway
+# ACI Payment Gateway
 
-This module is powered by npm. Top install npm, please follow this [link](https://www.npmjs.com/get-npm).
-
-To install the dependencies, run
-
+### Installing dependencies
 ```
-npm install
+php composer.phar install
 ```
-
-To start the server, run
-
-```
-npm start
-``` 
